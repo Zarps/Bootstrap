@@ -11,6 +11,10 @@
         .jumbotron {
             background: url("./assets/6personagens.jpg") center center / cover no-repeat;
         }
+
+        html {
+            scroll-behavior: smooth;
+        }
 </style>
     <title>Bootstrap-Avatar</title>
 </head>
@@ -27,18 +31,21 @@
             <li class="nav-item active">
                 <a class="nav-link  text-light" href="siteCompleto.html">Home <span class="sr-only">(página atual)</span></a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#Personagens">Personagens</a>
+            </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Livros
                 </a>
             <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item text-light" href="#">Livro 1: Água</a>
-                <a class="dropdown-item text-light" href="#">Livro 2: Terra</a>
-                <a class="dropdown-item text-light" href="#">Livro 3: Fogo</a>
+                <a class="dropdown-item text-light" href="#Livro1">Livro 1: Água</a>
+                <a class="dropdown-item text-light" href="#Livro2">Livro 2: Terra</a>
+                <a class="dropdown-item text-light" href="#Livro3">Livro 3: Fogo</a>
             </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-light" href="#">Sobre</a>
+                <a class="nav-link text-light" href="#Criador">Criador</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -93,74 +100,71 @@
     <!-- /jumbotron -->
 
     <!-- Card -->
+    <div id="Personagens" class="vw-100 center center / cover no-repeat;" style="background: url(../Fundamentos-web-Bootstrap/assets/aang.png);" >
+    <h2 class="container text-center p-2 text-dark">Alguns Personagens</h2>
     <div class="container">
 
     <div class="card-columns">
-        <div class="card">
-        <img class="card-img-top" src=".../100px160/" alt="Imagem de capa do card">
+        <div class="card p-2">
+        <img class="card-img-top" src="../Fundamentos-web-Bootstrap/assets/AangPersonagem.jpg" alt="Imagem de capa do card">
         <div class="card-body">
-            <h5 class="card-title">Título do card que quebra em uma nova linha</h5>
-            <p class="card-text">Este é um card mais longo com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior.</p>
+            <h5 class="card-title text-info">Avatar Aang</h5>
+            <p class="card-text text-info">Aang foi um Nômade do Ar nascido em 12 AG e o Avatar durante o conflito 
+                conhecido como Guerra dos Cem Anos. Seu antecessor imediato foi o Avatar Roku, e sua sucessora 
+                foi a Avatar Korra. Como o Avatar de seu tempo, foi o único capaz de realizar a dobra dos 
+                quatro elementos. Ele também foi um dos poucos Avatares, e o primeiro em vários ciclos, a 
+                aprender a antiga arte da Dobra de Energia, e o primeiro Avatar a utilizar a técnica.</p>
         </div>
         </div>
-        <div class="card p-3">
-        <blockquote class="blockquote mb-0 card-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+
+        <div class="card p-2">
+            <img class="card-img-top" src="../Fundamentos-web-Bootstrap/assets/zukopersonagem.jpg" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title text-danger">Principe Zuku</h5>
+                <p class="card-text text-danger">Zuko é um hábil e poderoso dobrador de fogo, nascido como um 
+                    príncipe na Família Real da Nação do Fogo e manteve o título de Senhor do Fogo de 100 DG 
+                    até 167 DG. Inicialmente, o principal antagonista da Equipe Avatar, por três anos sua vida 
+                    era concentrada em capturar o Avatar, dando fim ao seu banimento e recuperando sua honra 
+                    como Príncipe Real da Nação do Fogo. Zuko é facilmente reconhecido pela queimadura no lado 
+                    esquerdo de seu rosto, dada a ele por seu pai, Senhor do Fogo Ozai, pouco antes de sua 
+                    expulsão devido as suas atitudes desrespeitosas na Sala de Guerra e a se recusar a duelar 
+                    contra seu pai em um Agni Kai.</p>
+                    <p class="card-text"><small class="text-muted">Pilar do fogo</small></p>
+        </div>
+        </div>
+
+
+        <div class="card p-2">
+            <img class="card-img-top" src="../Fundamentos-web-Bootstrap/assets/katarapersonagem2.jpg" alt="Imagem de capa do card">
+        <blockquote class="blockquote mb-0 card-body text-primary">
+            <p>Katara é uma Dobradora de Água que nasceu e cresceu no Tribo da Água do Sul e foi criada por 
+                sua avó, Kanna, assim como seu irmão mais velho, Sokka, após seu pai deixar o Polo Sul. 
+                Katara foi a última Dobradora de água em sua tribo e levou uma vida normal adolescente até 
+                que ela e seu irmão encontraram um menino chamado Aang um Nômade do Ar congelado em um iceberg. 
+                Quando ela descobre que ele é o Avatar, perdido por cem anos, ela tem a esperança de que ele é 
+                quem vai salvar o mundo devastado pela guerra. Katara e seu irmão deixam sua tribo para trás 
+                para viajar com Aang, para ele aprender a dominar os outros elementos (água, terra e fogo) e 
+                ajudá-lo a finalmente pôr um fim à devastação da Nação do Fogo.</p>
             <footer class="blockquote-footer">
             <small class="text-muted">
-                Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
+                <cite title="Título da fonte">Pilar da água</cite>
             </small>
             </footer>
         </blockquote>
         </div>
-        <div class="card">
-        <img class="card-img-top" src=".../100px160/" alt="Imagem de capa do card">
-        <div class="card-body">
-            <h5 class="card-title">Título do card</h5>
-            <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-            <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
-        </div>
-        </div>
-        <div class="card bg-primary text-white text-center p-3">
-        <blockquote class="blockquote mb-0">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-            <footer class="blockquote-footer">
-            <small>
-                Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
-            </small>
-            </footer>
-        </blockquote>
-        </div>
-        <div class="card text-center">
-        <div class="card-body">
-            <h5 class="card-title">Título do card</h5>
-            <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-            <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
-        </div>
-        </div>
-        <div class="card">
-        <img class="card-img" src=".../100px260/" alt="Imagem do card">
-        </div>
-        <div class="card p-3 text-right">
-        <blockquote class="blockquote mb-0">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <footer class="blockquote-footer">
-            <small class="text-muted">
-                Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
-            </small>
-            </footer>
-        </blockquote>
-        </div>
-        <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">Título do card</h5>
-            <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.</p>
-            <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
-        </div>
-        </div>
-    </div>
 </div>
     <!-- /Card -->
+
+    <!-- texto e video -->
+
+    <div class="row"> 
+        <div class="col-md-6">
+
+
+        </div>
+    </div>
+
+    <!-- /texto e video -->
 
 
     
