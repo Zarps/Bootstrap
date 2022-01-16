@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
     <style>
         .jumbotron {
             margin: 0;
@@ -23,9 +24,11 @@
         body {
             
             font-family: 'Sarala', sans-serif;
+            font-weight: 400;
         }
         #righteous {
             font-family: 'Righteous', cursive;
+            font-weight: 400;
         }
 </style>
     <title>Bootstrap-Avatar</title>
@@ -114,8 +117,8 @@
     <!-- /jumbotron -->
 
     <!-- Card -->
-    <div id="Personagens" class=" vw-100 center center / cover no-repeat;" style="background-size: 100%; background: url(../Fundamentos-web-Bootstrap/assets/aang.png);" >
-    <h2 id="righteous" class="text-center p-2 text-dark">Alguns Personagens</h2>
+    <div id="Personagens" class=" vw-100 center center / cover no-repeat;" style="background-position: 40ch; background-size: 120%; background-image: url(../Fundamentos-web-Bootstrap/assets/aang.png);" >
+    <h2 id="righteous" class="text-center p-2 text-dark mb-5 font-italic font-weight-light" style="font-size: 48px;">Alguns Personagens</h2>
     <div class="container">
 
     <div class="card-columns">
@@ -174,7 +177,7 @@
 
     <!-- cards2 -->
 
-    <div class="vw-100 center center / cover no-repeat;" style="background-size: 100%; background: url(../Fundamentos-web-Bootstrap/assets/soka.png);" >
+    <div class="vw-100 center center / cover no-repeat;" style="background-position: -30ch; background-size: 160%; background-image: url(../Fundamentos-web-Bootstrap/assets/soka.png);" >
     <h2 class="text-center p-2 text-dark"></h2>
     <div class="container">
         <div class="card-columns">
@@ -252,9 +255,9 @@
             <iframe class="mb-5 mt-5" width="560" height="320" src="https://www.youtube.com/embed/l1_DFW8w21Q?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         </div>
-        <div>
-            <p class="text-light"><strong>Assista na Netflix</strong> </p>
-            <a href="https://www.netflix.com/br/title/70142405" target="_blank">
+        <div class="col-md-2">
+            <p class="text-light text-center"><strong>Assista na Netflix</strong> </p>
+            <a href="https://www.netflix.com/br/title/70142405" target="_blank" class="d-flex justify-content-center">
                 <img class="mb-5" src="./assets/netflix2.png" alt="Logo do Netflix" height="50px">
             </a>
         </div>
@@ -268,43 +271,61 @@
     <div class="vw-100 center center / cover no-repeat;" style="background-position: 20px; background-size: 110%; background-image: url(../Fundamentos-web-Bootstrap/assets/momo.png);">
     <div id="Criador" class="container">
     <div class="row">
+        <div class="col-md-6 d-flex justify-content-center align-itens-center mt-5" >
+            <img src="./assets/Criadordosite.jpg" alt="Foto do criador" height="300px" class="rounded-circle" style="-webkit-box-shadow: 5px 5px 12px 5px #000000; 
+            box-shadow: 5px 5px 12px 5px #4d2213;">
+
+        </div>
+        <div id="righteous" class="col-md-6 p-5 mt-5">
+            <p><strong>Olá, sou Wesley Rios, tenho 26 anos e estou entrando na área de tecnologia recentemente, através de um bootcamp pela GenerationBrasil para ser um Desenvolvedor WEB e melhorando também minhas habilidades técnicas e soft skills, estou trabalhando com muita persistência nessa etapa para adquirir todo conhecimento que o bootcamp oferece, e poder entrar no mercado de trabalho da tecnologia com motivação, cabeça erguida e pronto para novos desafios.
+            </strong></p>
+        </div>
+
+    </div>
+    <div class="row">
         <div class="col-md-12">
-            <h4 class="text-center">Entre em contato</h4>
+            <h4 id="righteous" class="text-center mb-5 mt-5" style="font-size: 42px;"><strong>Entre em contato</strong></h4>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-md-6">
+    <div class="row d-flex align-itens-center">
+        <div class="col-md-6 justify-content-center mb-5">
     
     <form>
         <div class="form-group">
-        <label for="exampleFormControlInput1">Endereço de email</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+        <label for="exampleFormControlInput1"><strong>Endereço de email</strong></label>
+        <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" onkeyup="validarEmail()">
+        <div id="txtEmail"></div>
         </div>
         <div class="form-group">
-        <label for="exampleFormControlSelect2">Exemplo de select múltiplo</label>
-        <select multiple class="form-control" id="exampleFormControlSelect2">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-        </select>
+            <label for="exampleFormControlSelect1"><strong>Idade</strong></label>
+            <select class="form-control" id="exampleFormControlSelect1">
+            <option>Menor de 15 anos</option>
+            <option>Entre 16 a 24 anos</option>
+            <option>Entre 25 a 31 anos</option>
+            <option>Entre 32 a 39 anos</option>
+            <option>Acima de 40 anos</option>
+            </select>
         </div>
         <div class="form-group">
-        <label for="exampleFormControlTextarea1">Exemplo de textarea</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <label for="exampleFormControlTextarea1"><strong>Assunto</strong></label>
+        <textarea class="form-control" id="assunto" rows="3" onkeyup="validarAssunto()"></textarea>
+        <div id="txtAssunto"></div>
         </div>
+        <div class="form-group d-flex justify-content-end">
+            <button class="btn btn-outline-light text-dark" onclick="enviar()"><strong>Enviar</strong></button>
+        </div>
+
     </form>
     </div>
 
-    <div class="col-md-6">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116936.58267446203!2d-46.51098359365155!3d-23.66636462976998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce69549e48e43f%3A0xe210627a68fc88df!2zTWF1w6EsIFNQ!5e0!3m2!1spt-BR!2sbr!4v1642277919086!5m2!1spt-BR!2sbr" 
+    <div class="col-md-6 d-flex justify-content-center align-itens-center">
+        <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116936.58267446203!2d-46.51098359365155!3d-23.66636462976998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce69549e48e43f%3A0xe210627a68fc88df!2zTWF1w6EsIFNQ!5e0!3m2!1spt-BR!2sbr!4v1642277919086!5m2!1spt-BR!2sbr" 
         width="500" 
         height="350" 
         style="border:3;" 
         allowfullscreen="" 
-        loading="lazy"></iframe>
+        loading="lazy" id="mapa" onmousemove="mapaZoom()" onmouseout="mapaNormal()"></iframe>
     </div>
 
     </div>
@@ -314,7 +335,7 @@
 
 
         <!-- rodapé -->
-
+    
         <hr color="black">
         <footer class="container">
             <div class="row mb-3"> 
@@ -347,6 +368,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
 
 </body>
 </html>
